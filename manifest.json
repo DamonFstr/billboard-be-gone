@@ -1,0 +1,22 @@
+{
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://www.netflix.com/*"]
+    }
+  ],
+  "description": "Netfix removes the auto playing previews on Netflix.",
+  "manifest_version": 2,
+  "name": "Netflix Billboard Begone",
+  "permissions": [
+    "https://*.nflxvideo.net/*",
+    "https://www.netflix.com/*",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "short_name": "Netfix",
+  "version": "0.1"
+}
